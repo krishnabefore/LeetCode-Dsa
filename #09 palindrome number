@@ -1,0 +1,28 @@
+class Solution {
+public:
+    bool isPalindrome(int x) {
+
+        if( x < 0 ){
+            return false;
+        }
+     long long ans = 0;
+     int original = x;
+     while(x != 0){
+    int lastD = x % 10;
+    x = x/10;
+    ans = ans*10 + lastD;
+    
+     }
+
+
+
+ if((int)ans == original)
+{
+    return true;
+} 
+
+else{
+    return false;
+}
+    }
+};
